@@ -13,5 +13,6 @@ const game = new Game({
     board: new Board(boardConfig)
 });
 
+
 console.log(game)
 

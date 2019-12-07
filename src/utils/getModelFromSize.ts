@@ -5,7 +5,7 @@ import { BoardCell } from '../BoardCell';
 
 export function getModelFromSize(size: number): Model {
     const MODEL: Model = [];
-    
+
     for (let row = 0; row < size; row++) {
         const ROW: Array<BoardCell> = [];
 
@@ -16,8 +16,6 @@ export function getModelFromSize(size: number): Model {
 
         MODEL.push(ROW);
     }
-
-    MODEL[0][0] = new BoardCell(0, 0, 2);
 
     return MODEL;
 }
