@@ -8,8 +8,8 @@ export class Board {
     public model: BoardCellInterface[][] = [];
     
     constructor(config: BoardConfigInterface){
-        this.initModel();
         this.size = config.size;
+        this.initModel();
     }
 
     public initModel() {
